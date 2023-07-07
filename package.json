@@ -2,7 +2,9 @@
     "name": "login",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "browserslist": [
+        "defaults"
+    ],
     "scripts": {
         "start": "parcel serve ./src/entry/index.html",
         "build": "parcel build ./src/entry/index.html",
