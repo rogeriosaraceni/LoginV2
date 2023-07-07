@@ -1,0 +1,58 @@
+/* --------------------------------------------------------------------
+* - body
+---------------------------------------------------------------------- */
+body {
+    position: relative;
+    background-color: #f7f7f8;
+    font-family: 'azo_sansregular';
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+    font-family: 'adriannaregular';
+    font-family: 'adriannabold';
+}
+
+a {
+    color: var(--color-app-orange-400);
+    transition: all 0.3s;
+}
+a:hover {
+    color: var(--color-app-blue);
+}
+
+/* --------------------------------------------------------------------
+* - card
+---------------------------------------------------------------------- */
+.card {
+    margin-bottom: 1rem;
+    border-color: #f9f0f0 !important;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%) !important;
+}
+
+/* --------------------------------------------------------------------
+* - Scrollbar CSS v1.2
+* - Last update: 06 jul 2021
+* - Rogerio Saraceni
+* -------------------------------------------------------------------- */
+:root {
+    --scrollbar-bg: #f7f2f2;
+    --scrollbar-bg-track: #bebcbc;
+    --scrollbar-bg-thumb: #bbb5b5;
+}
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-bg-track) var(--scrollbar-bg);
+}
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar { width: 10px;}
+::-webkit-scrollbar { height: 10px;}
+::-webkit-scrollbar-track { background: var(--scrollbar-bg);}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: var(--scrollbar-bg-track);
+}

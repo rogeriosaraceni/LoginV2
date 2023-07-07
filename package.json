@@ -1,0 +1,20 @@
+{
+    "name": "login",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel serve ./src/entry/index.html",
+        "build": "parcel build ./src/entry/index.html",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@parcel/packager-raw-url": "^2.9.3",
+        "@parcel/transformer-sass": "^2.9.3",
+        "@parcel/transformer-webmanifest": "^2.9.3",
+        "parcel": "^2.9.3",
+        "posthtml-include": "^1.7.4"
+    }
+}

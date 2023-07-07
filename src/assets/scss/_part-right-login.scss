@@ -1,0 +1,93 @@
+/* --------------------------------------------------------------------
+* - box-right
+---------------------------------------------------------------------- */
+.box-right {
+    grid-area: box-right;
+    position: relative;
+}
+
+.box-right .img-box-right {
+    z-index: 0;
+    position: absolute;
+    right: 15%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: contain;
+}
+.box-right .element-box-right {
+    z-index: 0;
+    position: absolute;
+    right: -2%;
+    bottom: 4%;
+    width: 35%;
+    height: 35%;
+    object-fit: contain;
+}
+
+/* --------------------------------------------------------------------
+* - content-box-right
+---------------------------------------------------------------------- */
+.content-box-right {
+    display: flex;
+    height: 100%;
+}
+.content-box-right::before {
+    z-index: 0;
+    content: "";
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(90deg, rgba(4, 61, 93, 0.6) 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.content-box-right .canvas {
+    z-index: 1;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 0 top 0;
+    background-image: url("../images/canvas-right.svg");
+}
+
+/* --------------------------------------------------------------------
+* - wrapper-login
+---------------------------------------------------------------------- */
+.wrapper-login {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 4rem 2rem 2rem 2rem;
+}
+
+.wrapper-login .logo-login-horizontal {
+    display: none;
+    z-index: 1;
+    margin-bottom: 2rem;
+}
+
+.wrapper-login .card-login {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    max-width: 420px;
+    height: 100%;
+    max-height: 500px;
+    border-radius: 1rem;
+    border: none!important;
+    background-color: transparent;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 32px 0 rgba(130, 131, 139, 0.37)!important;
+}
+
+.wrapper-login .title-login {
+    color: var(--color-app-blue);
+    font-size: 1.7rem;
+}
